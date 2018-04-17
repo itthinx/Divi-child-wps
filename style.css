@@ -1,0 +1,77 @@
+/**
+ * Theme Name:  Divi Child WPS
+ * Description: Divi child theme that adds full-screen Live Search triggered from Divi's header search icon. Requires our official WooCommerce Product Search – available exclusively at https://woocommerce.com/products/woocommerce-product-search/
+ * Author:      itthinx
+ * Author URI:  http://www.itthinx.com
+ * Template:    Divi
+ * Tags:        light
+ * Text Domain: divi-child-wps
+ * Version:     1.0.0
+ */
+@import url("../Divi/style.css");
+
+/**
+ * Full-screen search triggered from Divi's header search icon.
+ */
+
+.et_search_outer .product-search {
+	position: fixed;
+	top: 3em;
+	left: 1em;
+	width: 100%;
+	height: 100%;
+	min-height: 50px;
+	background-color: #fff;
+	opacity: 0.92;
+	padding-right: 30px;
+}
+.et_search_outer .product-search .product-search-form {
+}
+.et_search_outer .product-search input[type="text"].product-search-field {
+	width: 90%;
+	left: 0%;
+	right: 0%;
+	border: 2px solid #ccc;
+	border-radius: 2px;
+	padding: 2px;
+	font-size: 2em;
+}
+.et_search_outer .product-search span.product-search-field-clear {
+	font-size: 2em;
+}
+.et_search_outer .product-search span.product-search-field-clear::after {
+	padding: 0.2em;
+	vertical-align: baseline;
+}
+.et_search_outer .product-search .product-search-results {
+	position: absolute;
+	top: 3em;
+	left: 0;
+	width: 90%;
+	height: 80%;
+	z-index: 1000;
+	overflow-y: scroll;
+}
+.et_search_outer div.divi_child_wps_search_form_container span.et_close_search_field {
+	display: block;
+	z-index: 99999;
+	opacity: 1;
+	position: fixed;
+	top: 3em;
+	bottom: unset;
+	font-size: 16px;
+	width: 30px;
+	height: 30px;
+}
+
+/**
+ * Slide-in version
+ */
+.et_slide_in_menu_container .product-search input[type="text"].product-search-field {
+	color: #333;
+}
+
+.et_slide_in_menu_container .product-search-results .entry:hover,
+.et_slide_in_menu_container .product-search-results .entry.active {
+	background-color: #333;
+}
