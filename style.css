@@ -6,7 +6,7 @@
  * Template:    Divi
  * Tags:        light
  * Text Domain: divi-child-wps
- * Version:     1.0.0
+ * Version:     1.1.0
  */
 @import url("../Divi/style.css");
 
@@ -16,7 +16,7 @@
 
 .et_search_outer .product-search {
 	position: fixed;
-	top: 3em;
+	top: 3.6em;
 	left: 1em;
 	width: 100%;
 	height: 100%;
@@ -38,6 +38,11 @@
 }
 .et_search_outer .product-search span.product-search-field-clear {
 	font-size: 2em;
+	position: relative;
+	top: auto;
+	bottom: auto;
+	padding: 0;
+	right: auto;
 }
 .et_search_outer .product-search span.product-search-field-clear::after {
 	padding: 0.2em;
